@@ -34,4 +34,22 @@ Package_size
 
 # Model Comparison
 
-<img width="1792" alt="Model Comparison" src="https://user-images.githubusercontent.com/78765097/159579495-bd1b7c15-833d-4af0-9059-f53823949a4a.png">
+As a regression problem, evaluation was done based on the Root mean squared error, mean absolute error, R2_score, and mean sum of squared error. Different models were implemented to figure out which model will be better suited to predict delivery date more accurately.
+
+Based on the comparison among all the models, the ensemble method on random forest regression, gradient boost regression, and CatBoost regression outperforms all the others. 
+
+<img width="845" alt="Before HT" src="https://user-images.githubusercontent.com/78765097/159580659-e3d0b838-6da7-4a27-8557-5fc118d72e1e.png">
+
+
+
+# After Hyperparameter tuning
+
+For the three models mentioned above, hyperparameter tuning was done to find the best parameter for higher accuracy. Used RandomizedSearchCV, GridSearchCV to fine-tune the models’ hyperparameters.
+
+<img width="585" alt="After HT" src="https://user-images.githubusercontent.com/78765097/159580682-777302a6-203d-4467-a518-8b2effdd4cb2.png">
+
+
+After the hyper tuning step, Random Forest gave about 20% more r2_score than it did before hyper tuning with 2.54 MSE, 1.59 RMSE, and 0.97 MAE scores. Since the r2_score didn't change drastically, the ensemble approach was used to get majority votes from these selected models. R2_score 0.74 with MSE 2.53 was obtained using ensemble regression, which was about 0.1% better than random forest regressor.
+
+
+
