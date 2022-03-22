@@ -6,15 +6,7 @@ This project focused on how to apply Machine Learning to build a model that can 
 
 The dataset is taken from eBay from the ml challenge to estimate the delivery time. The data is provided with all the shipment and delivery related details and requires us to estimate the delivery date for items purchased. Features available were -
 
-Acceptance_scan_timestamp
-Declared_handling_days
-Shipment_method_id
-Carrier_min_estimate
-Carrier_max_estimate
-Item_zip
-Buyer_zip
-Category_id
-Package_size
+Acceptance_scan_timestamp, Declared_handling_days, Shipment_method_id, Carrier_min_estimate, Carrier_max_estimate, Item_zip, Buyer_zip, Category_id, Package_size
 
 
 # Data Pre-processing
